@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MissionObject
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MissionObject
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.MissionObject">
+  
+  
+  <h1 id="TaleWorlds_MountAndBlade_MissionObject" data-uid="TaleWorlds.MountAndBlade.MissionObject" class="text-break">Class MissionObject
+  </h1>
+  <div class="markdown level0 summary"><p>The <strong>MissionObject</strong> is a <a href="TaleWorlds.Engine.ScriptComponentBehaviour.html"><strong>ScriptComponentBehaviour</strong></a> that is attached to a <strong>GameEntity</strong>[TaleWorlds.Engine.GameEntity.html) in order to make it a placeable, interactable object in the &quot;mission&quot; world - that is, the first/third person world, <strong>not</strong> the world map.</p>
+<p>The <strong>MissionObject</strong> <em>inherits from</em> ScriptComponentBehaviour. You would also say that MissionObject <em>extends</em> ScriptComponentBehaviour. This means that all of the functions and properties available in ScriptComponentBehaviour are <em>also available in MissionObject</em>. This is what people mean when they say &quot;Inheritance&quot;.</p>
+<p><strong>MissionObject</strong> is also an <em>abstract</em> class. That means that you can't ever create a <strong>new MissionObject</strong>. In order to use this class, you must <em>extend</em> it, and your extending class must implement any <em>abstract <strong>methods</strong></em> that are defined in this <em>abstract <strong>class</strong></em>.</p>
+<p>A good example of an object that <em>extends</em> <strong>MissionObject</strong> would be <a href="TaleWorlds.MountAndBlade.Bird.html"><strong>Bird</strong></a>.</p>
+<p><strong>REMEMBER!</strong> <strong>Bird</strong> is still a <strong>ScriptComponentBehaviour</strong>, because it extends a class that extends <em>that</em> class. So a <strong>Bird</strong> is still added to a <strong>GameEntity</strong> as any other <strong>ScriptComponentBehaviour</strong> can be, and it has access to all of the methods and properties of both <strong>MissionObject</strong> <em>and</em> <strong>ScriptComponentBehaviour</strong>. This is the beauty of inheritance!</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TaleWorlds.DotNet.DotNetObject</span></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html">ScriptComponentBehaviour</a></div>
+    <div class="level3"><span class="xref">MissionObject</span></div>
+      <div class="level4"><a class="xref" href="TaleWorlds.MountAndBlade.Bird.html">Bird</a></div>
+      <div class="level4"><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html">SynchedMissionObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.html">TaleWorlds.MountAndBlade</a></h6>
+  <h6><strong>Assembly</strong>: Bannerlord Community API.dll</h6>
+  <h5 id="TaleWorlds_MountAndBlade_MissionObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MissionObject : ScriptComponentBehaviour</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject__ctor_" data-uid="TaleWorlds.MountAndBlade.MissionObject.#ctor*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject__ctor" data-uid="TaleWorlds.MountAndBlade.MissionObject.#ctor">MissionObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissionObject()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_BlockerNavMeshIdLocal" data-uid="TaleWorlds.MountAndBlade.MissionObject.BlockerNavMeshIdLocal">BlockerNavMeshIdLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int BlockerNavMeshIdLocal = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_DynamicNavmeshIdStart" data-uid="TaleWorlds.MountAndBlade.MissionObject.DynamicNavmeshIdStart">DynamicNavmeshIdStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int DynamicNavmeshIdStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_EnterNavMeshIdLocal" data-uid="TaleWorlds.MountAndBlade.MissionObject.EnterNavMeshIdLocal">EnterNavMeshIdLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int EnterNavMeshIdLocal = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_ExitNavMeshIdLocal" data-uid="TaleWorlds.MountAndBlade.MissionObject.ExitNavMeshIdLocal">ExitNavMeshIdLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int ExitNavMeshIdLocal = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_InsideNavMeshIdLocal" data-uid="TaleWorlds.MountAndBlade.MissionObject.InsideNavMeshIdLocal">InsideNavMeshIdLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int InsideNavMeshIdLocal = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_NavMeshPrefabName" data-uid="TaleWorlds.MountAndBlade.MissionObject.NavMeshPrefabName">NavMeshPrefabName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditableScriptComponentVariable(true)]
+protected string NavMeshPrefabName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime_" data-uid="TaleWorlds.MountAndBlade.MissionObject.CreatedAtRuntime*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime" data-uid="TaleWorlds.MountAndBlade.MissionObject.CreatedAtRuntime">CreatedAtRuntime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CreatedAtRuntime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_Id_" data-uid="TaleWorlds.MountAndBlade.MissionObject.Id*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_Id" data-uid="TaleWorlds.MountAndBlade.MissionObject.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissionObjectId Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MissionObjectId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_IsDisabled_" data-uid="TaleWorlds.MountAndBlade.MissionObject.IsDisabled*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_IsDisabled" data-uid="TaleWorlds.MountAndBlade.MissionObject.IsDisabled">IsDisabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_AddStuckMissile_" data-uid="TaleWorlds.MountAndBlade.MissionObject.AddStuckMissile*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_AddStuckMissile_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.MissionObject.AddStuckMissile(TaleWorlds.Engine.GameEntity)">AddStuckMissile(GameEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddStuckMissile(GameEntity missileEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td><span class="parametername">missileEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_AfterMissionStart_" data-uid="TaleWorlds.MountAndBlade.MissionObject.AfterMissionStart*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_AfterMissionStart" data-uid="TaleWorlds.MountAndBlade.MissionObject.AfterMissionStart">AfterMissionStart()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterMissionStart()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity_" data-uid="TaleWorlds.MountAndBlade.MissionObject.AttachDynamicNavmeshToEntity*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity" data-uid="TaleWorlds.MountAndBlade.MissionObject.AttachDynamicNavmeshToEntity">AttachDynamicNavmeshToEntity()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AttachDynamicNavmeshToEntity()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_GetEntityToAttachNavMeshFaces_" data-uid="TaleWorlds.MountAndBlade.MissionObject.GetEntityToAttachNavMeshFaces*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_GetEntityToAttachNavMeshFaces" data-uid="TaleWorlds.MountAndBlade.MissionObject.GetEntityToAttachNavMeshFaces">GetEntityToAttachNavMeshFaces()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual GameEntity GetEntityToAttachNavMeshFaces()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_GetHashCode_" data-uid="TaleWorlds.MountAndBlade.MissionObject.GetHashCode*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_GetHashCode" data-uid="TaleWorlds.MountAndBlade.MissionObject.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_GetUniqueIdentifier_" data-uid="TaleWorlds.MountAndBlade.MissionObject.GetUniqueIdentifier*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_GetUniqueIdentifier" data-uid="TaleWorlds.MountAndBlade.MissionObject.GetUniqueIdentifier">GetUniqueIdentifier()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUniqueIdentifier()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_MovesEntity_" data-uid="TaleWorlds.MountAndBlade.MissionObject.MovesEntity*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_MovesEntity" data-uid="TaleWorlds.MountAndBlade.MissionObject.MovesEntity">MovesEntity()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool MovesEntity()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_OnEndMission_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnEndMission*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_OnEndMission" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnEndMission">OnEndMission()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEndMission()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_OnHit_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnHit*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_OnHit_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_Int32_System_Int32_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnHit(Agent,System.Int32,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,System.Int32,System.Int32,System.Boolean@)">OnHit(Agent, Int32, Vec3, Vec3, Int32, Int32, out Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool OnHit(Agent attackerAgent, int damage, Vec3 impactPosition, Vec3 impactDirection, int weaponKind, int curUsageIndex, out bool reportDamage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">attackerAgent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">damage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.Vec3</span></td>
+        <td><span class="parametername">impactPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.Vec3</span></td>
+        <td><span class="parametername">impactDirection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">weaponKind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">curUsageIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reportDamage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_OnInit_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnInit*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_OnInit" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnInit">OnInit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_OnMissionReset_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnMissionReset*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_OnMissionReset" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnMissionReset">OnMissionReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMissionReset()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_OnPreInit_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnPreInit*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_OnPreInit" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnPreInit">OnPreInit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPreInit()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_OnRemoved_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnRemoved*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_OnRemoved" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnRemoved">OnRemoved()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRemoved()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_ReadFromNetwork_" data-uid="TaleWorlds.MountAndBlade.MissionObject.ReadFromNetwork*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_ReadFromNetwork" data-uid="TaleWorlds.MountAndBlade.MissionObject.ReadFromNetwork">ReadFromNetwork()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ReadFromNetwork()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_" data-uid="TaleWorlds.MountAndBlade.MissionObject.SetAbilityOfFaces*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.MissionObject.SetAbilityOfFaces(System.Boolean)">SetAbilityOfFaces(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetAbilityOfFaces(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_SetDisabled_" data-uid="TaleWorlds.MountAndBlade.MissionObject.SetDisabled*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_SetDisabled_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.MissionObject.SetDisabled(System.Boolean)">SetDisabled(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisabled(bool isParentObject = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isParentObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_" data-uid="TaleWorlds.MountAndBlade.MissionObject.SetDisabledAndMakeInvisible*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.MissionObject.SetDisabledAndMakeInvisible(System.Boolean)">SetDisabledAndMakeInvisible(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisabledAndMakeInvisible(bool isParentObject = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isParentObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_MissionObject_WriteToNetwork_" data-uid="TaleWorlds.MountAndBlade.MissionObject.WriteToNetwork*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_MissionObject_WriteToNetwork" data-uid="TaleWorlds.MountAndBlade.MissionObject.WriteToNetwork">WriteToNetwork()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteToNetwork()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

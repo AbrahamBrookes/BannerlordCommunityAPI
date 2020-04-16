@@ -1,0 +1,315 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Abe/Documents/bannerlord_docs/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.GameEntity.ComponentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.GameEntity.ComponentType.html",
+          "hash": "8oafG3MO/6mh9LklJq1s5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.GameEntity.Mobility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.GameEntity.Mobility.html",
+          "hash": "uipBNrh91RFOXQROFCzL0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.GameEntity.UpgradeLevelMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.GameEntity.UpgradeLevelMask.html",
+          "hash": "i3+ukexCR89slsU7r1cttA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.GameEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.GameEntity.html",
+          "hash": "etTJ8SM0HsMqT/2zlwqi4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.ScriptComponentBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.ScriptComponentBehaviour.html",
+          "hash": "6eFf265fzk/2EJ2FLsVcQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.html",
+          "hash": "KqLOG1ZMBT0cDEA7ba0m9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.ArrowBarrel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.ArrowBarrel.html",
+          "hash": "TehtGJoRVD2Ynge9Jw5Kog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.Bird.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.Bird.html",
+          "hash": "9r6d5YsCBg5mPMWubNUWrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.MissionObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.MissionObject.html",
+          "hash": "aCITFO7XxbwnoSAQGg6cNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.SynchedMissionObject.SynchFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.SynchedMissionObject.SynchFlags.html",
+          "hash": "wgltlGVH3m1i3O/xTseD1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.SynchedMissionObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.SynchedMissionObject.html",
+          "hash": "KUhQUZeo6ou++GXJ9iUvow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.UsableMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.UsableMachine.html",
+          "hash": "CQcPdIIgNstnckdYSYRhYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.MountAndBlade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.MountAndBlade.html",
+          "hash": "MJRbcBX+Q+16Hsg2NJ5rdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "TRpAhQCY99SI6KSv0v7dlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "ho4UM9i+AqPyDT3H0AKcDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing.html",
+          "hash": "UT1tLv91cjzaKkCt/Ut18w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "taLMC3N5XDiw+SwkjeLIww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "SJhWXFaGyYSYHhn+SLEIJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "SPopeSGtQxqxdwaSzP6gNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 4
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 13,
+          "skipped_file_count": 1
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

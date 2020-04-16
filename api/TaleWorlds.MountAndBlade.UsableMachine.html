@@ -1,0 +1,2206 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UsableMachine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UsableMachine
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.UsableMachine">
+  
+  
+  <h1 id="TaleWorlds_MountAndBlade_UsableMachine" data-uid="TaleWorlds.MountAndBlade.UsableMachine" class="text-break">Class UsableMachine
+  </h1>
+  <div class="markdown level0 summary"><p><strong>UsableMachine</strong> is a <em>base class</em> for multiplayer siege equipment and other &quot;useable&quot; props, specifically in the multiplayer mission/battle view(not the map view).</p>
+<p>&quot;Base class&quot; means it is designed to be extended in order for devs to create new mission objects. It is marked <em>abstract</em> to prevent people from trying to create a new instance of this class directly.</p>
+<p>A good example of how this is used is the <a href="TaleWorlds.MountAndBlade.ArrowBarrel.html"><strong>ArrowBarrel</strong></a> class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TaleWorlds.DotNet.DotNetObject</span></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html">ScriptComponentBehaviour</a></div>
+    <div class="level3"><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></div>
+    <div class="level4"><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html">SynchedMissionObject</a></div>
+    <div class="level5"><span class="xref">UsableMachine</span></div>
+      <div class="level6"><a class="xref" href="TaleWorlds.MountAndBlade.ArrowBarrel.html">ArrowBarrel</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IFocusable</span></div>
+    <div><span class="xref">IOrderable</span></div>
+    <div><span class="xref">IDetachment</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_RemainingDuration">SynchedMissionObject.RemainingDuration</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color">SynchedMissionObject.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color2">SynchedMissionObject.Color2</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SynchronizeCompleted">SynchedMissionObject.SynchronizeCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetLocalPositionSmoothStep_TaleWorlds_Library_Vec3__">SynchedMissionObject.SetLocalPositionSmoothStep(Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetDisabledSynched">SynchedMissionObject.SetDisabledSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetFrameSynched(MatrixFrame, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetGlobalFrameSynched(MatrixFrame, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetFrameSynchedOverTime(MatrixFrame, Single, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetGlobalFrameSynchedOverTime(MatrixFrame, Single, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_String_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(String, Int32, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationChannelParameterSynched_System_Int32_System_Single_">SynchedMissionObject.SetAnimationChannelParameterSynched(Int32, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_PauseSkeletonAnimationSynched">SynchedMissionObject.PauseSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ResumeSkeletonAnimationSynched">SynchedMissionObject.ResumeSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_BurstParticlesSynched_System_Boolean_">SynchedMissionObject.BurstParticlesSynched(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ApplyImpulseSynched_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_Boolean_">SynchedMissionObject.ApplyImpulseSynched(Vec3, Vec3, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_AddBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.AddBodyFlagsSynched(BodyFlags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_RemoveBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.RemoveBodyFlagsSynched(BodyFlags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColors_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColors(UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColorsSynched_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColorsSynched(UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_Id">MissionObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_IsDisabled">MissionObject.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_System_Boolean_">MissionObject.SetAbilityOfFaces(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity">MissionObject.AttachDynamicNavmeshToEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetEntityToAttachNavMeshFaces">MissionObject.GetEntityToAttachNavMeshFaces()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnPreInit">MissionObject.OnPreInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetHashCode">MissionObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetUniqueIdentifier">MissionObject.GetUniqueIdentifier()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AfterMissionStart">MissionObject.AfterMissionStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnHit_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_Int32_System_Int32_System_Boolean__">MissionObject.OnHit(Agent, Int32, Vec3, Vec3, Int32, Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabled_System_Boolean_">MissionObject.SetDisabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_System_Boolean_">MissionObject.SetDisabledAndMakeInvisible(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnEndMission">MissionObject.OnEndMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime">MissionObject.CreatedAtRuntime</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MovesEntity">MissionObject.MovesEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AddStuckMissile_TaleWorlds_Engine_GameEntity_">MissionObject.AddStuckMissile(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_InsideNavMeshIdLocal">MissionObject.InsideNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_EnterNavMeshIdLocal">MissionObject.EnterNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_ExitNavMeshIdLocal">MissionObject.ExitNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_BlockerNavMeshIdLocal">MissionObject.BlockerNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_NavMeshPrefabName">MissionObject.NavMeshPrefabName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_DynamicNavmeshIdStart">MissionObject.DynamicNavmeshIdStart</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.html">TaleWorlds.MountAndBlade</a></h6>
+  <h6><strong>Assembly</strong>: Bannerlord Community API.dll</h6>
+  <h5 id="TaleWorlds_MountAndBlade_UsableMachine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UsableMachine : SynchedMissionObject, IFocusable, IOrderable, IDetachment</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine__ctor_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.#ctor*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine__ctor" data-uid="TaleWorlds.MountAndBlade.UsableMachine.#ctor">UsableMachine()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UsableMachine()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine__areUsableStandingPointsVacant" data-uid="TaleWorlds.MountAndBlade.UsableMachine._areUsableStandingPointsVacant">_areUsableStandingPointsVacant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _areUsableStandingPointsVacant</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine__isDetachmentRecentlyEvaluated" data-uid="TaleWorlds.MountAndBlade.UsableMachine._isDetachmentRecentlyEvaluated">_isDetachmentRecentlyEvaluated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isDetachmentRecentlyEvaluated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine__isDisabledForAI" data-uid="TaleWorlds.MountAndBlade.UsableMachine._isDisabledForAI">_isDisabledForAI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isDisabledForAI</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine__usableStandingPoints" data-uid="TaleWorlds.MountAndBlade.UsableMachine._usableStandingPoints">_usableStandingPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;(int, StandingPoint)&gt; _usableStandingPoints</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">StandingPoint</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_ActiveWaitStandingPoint" data-uid="TaleWorlds.MountAndBlade.UsableMachine.ActiveWaitStandingPoint">ActiveWaitStandingPoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameEntity ActiveWaitStandingPoint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_AmmoPickUpTag" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AmmoPickUpTag">AmmoPickUpTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AmmoPickUpTag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_Components" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Components">Components</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;UsableMissionObjectComponent&gt; Components</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">UsableMissionObjectComponent</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_EnemyRangeToStopUsing" data-uid="TaleWorlds.MountAndBlade.UsableMachine.EnemyRangeToStopUsing">EnemyRangeToStopUsing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float EnemyRangeToStopUsing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_PilotStandingPointTag" data-uid="TaleWorlds.MountAndBlade.UsableMachine.PilotStandingPointTag">PilotStandingPointTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PilotStandingPointTag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_WaitStandingPointTag" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WaitStandingPointTag">WaitStandingPointTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WaitStandingPointTag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_AmmoPickUpPoints_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AmmoPickUpPoints*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_AmmoPickUpPoints" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AmmoPickUpPoints">AmmoPickUpPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;StandingPoint&gt; AmmoPickUpPoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">StandingPoint</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_CurrentlyUsedAmmoPickUpPoint_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.CurrentlyUsedAmmoPickUpPoint*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_CurrentlyUsedAmmoPickUpPoint" data-uid="TaleWorlds.MountAndBlade.UsableMachine.CurrentlyUsedAmmoPickUpPoint">CurrentlyUsedAmmoPickUpPoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StandingPoint CurrentlyUsedAmmoPickUpPoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_DestructionComponent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.DestructionComponent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_DestructionComponent" data-uid="TaleWorlds.MountAndBlade.UsableMachine.DestructionComponent">DestructionComponent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DestructableComponent DestructionComponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DestructableComponent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_FocusableObjectType_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.FocusableObjectType*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_FocusableObjectType" data-uid="TaleWorlds.MountAndBlade.UsableMachine.FocusableObjectType">FocusableObjectType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FocusableObjectType FocusableObjectType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FocusableObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_HasAIPickingUpAmmo_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.HasAIPickingUpAmmo*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_HasAIPickingUpAmmo" data-uid="TaleWorlds.MountAndBlade.UsableMachine.HasAIPickingUpAmmo">HasAIPickingUpAmmo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAIPickingUpAmmo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_HasWaitFrame_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.HasWaitFrame*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_HasWaitFrame" data-uid="TaleWorlds.MountAndBlade.UsableMachine.HasWaitFrame">HasWaitFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasWaitFrame { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsDeactivated_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDeactivated*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsDeactivated" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDeactivated">IsDeactivated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsDeactivated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsDestroyed_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDestroyed*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsDestroyed" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDestroyed">IsDestroyed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDestroyed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsDestructible_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDestructible*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsDestructible" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDestructible">IsDestructible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDestructible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsLoose_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsLoose*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsLoose" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsLoose">IsLoose</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLoose { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_MaxUserCount_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.MaxUserCount*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_MaxUserCount" data-uid="TaleWorlds.MountAndBlade.UsableMachine.MaxUserCount">MaxUserCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaxUserCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_PilotAgent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.PilotAgent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_PilotAgent" data-uid="TaleWorlds.MountAndBlade.UsableMachine.PilotAgent">PilotAgent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent PilotAgent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_PilotStandingPoint_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.PilotStandingPoint*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_PilotStandingPoint" data-uid="TaleWorlds.MountAndBlade.UsableMachine.PilotStandingPoint">PilotStandingPoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StandingPoint PilotStandingPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_StandingPoints_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.StandingPoints*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_StandingPoints" data-uid="TaleWorlds.MountAndBlade.UsableMachine.StandingPoints">StandingPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;StandingPoint&gt; StandingPoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">StandingPoint</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_usableMachine_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.usableMachine*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_usableMachine" data-uid="TaleWorlds.MountAndBlade.UsableMachine.usableMachine">usableMachine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UsableMachine usableMachine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html">UsableMachine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_UserCount_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.UserCount*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_UserCount" data-uid="TaleWorlds.MountAndBlade.UsableMachine.UserCount">UserCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_Users_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Users*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_Users" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Users">Users</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Agent&gt; Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Agent</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_WaitEntity_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WaitEntity*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_WaitEntity" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WaitEntity">WaitEntity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity WaitEntity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_WaitFrame_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WaitFrame*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_WaitFrame" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WaitFrame">WaitFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame WaitFrame { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.MatrixFrame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_AddAgentAtSlotIndex_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AddAgentAtSlotIndex*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_AddAgentAtSlotIndex_Agent_System_Int32_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AddAgentAtSlotIndex(Agent,System.Int32)">AddAgentAtSlotIndex(Agent, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAgentAtSlotIndex(Agent agent, int slotIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">slotIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_AddComponent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AddComponent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_AddComponent_UsableMissionObjectComponent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.AddComponent(UsableMissionObjectComponent)">AddComponent(UsableMissionObjectComponent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddComponent(UsableMissionObjectComponent component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UsableMissionObjectComponent</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_CreateAIBehaviourObject_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.CreateAIBehaviourObject*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_CreateAIBehaviourObject" data-uid="TaleWorlds.MountAndBlade.UsableMachine.CreateAIBehaviourObject">CreateAIBehaviourObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual UsableMachineAIBase CreateAIBehaviourObject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UsableMachineAIBase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_Deactivate_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Deactivate*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_Deactivate" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Deactivate">Deactivate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deactivate()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_DebugTick_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.DebugTick*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_DebugTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.DebugTick(System.Single)">DebugTick(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DebugTick(float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_Disable_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Disable*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_Disable" data-uid="TaleWorlds.MountAndBlade.UsableMachine.Disable">Disable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Disable()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetActionTextForStandingPoint_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetActionTextForStandingPoint*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetActionTextForStandingPoint_UsableMissionObject_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetActionTextForStandingPoint(UsableMissionObject)">GetActionTextForStandingPoint(UsableMissionObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject GetActionTextForStandingPoint(UsableMissionObject usableGameObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UsableMissionObject</span></td>
+        <td><span class="parametername">usableGameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Localization.TextObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetBestPointAlternativeTo_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetBestPointAlternativeTo*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetBestPointAlternativeTo_StandingPoint_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetBestPointAlternativeTo(StandingPoint,Agent)">GetBestPointAlternativeTo(StandingPoint, Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual StandingPoint GetBestPointAlternativeTo(StandingPoint standingPoint, Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td><span class="parametername">standingPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetComponent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetComponent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetComponent__1" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetComponent``1">GetComponent&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetComponent&lt;T&gt;()
+    where T : UsableMissionObjectComponent</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetDescriptionText_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetDescriptionText*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetDescriptionText_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetDescriptionText(TaleWorlds.Engine.GameEntity)">GetDescriptionText(GameEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string GetDescriptionText(GameEntity gameEntity = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td><span class="parametername">gameEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetDetachmentWeightAux_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetDetachmentWeightAux*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetDetachmentWeightAux_TaleWorlds_Core_BattleSideEnum_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetDetachmentWeightAux(TaleWorlds.Core.BattleSideEnum)">GetDetachmentWeightAux(BattleSideEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float? GetDetachmentWeightAux(BattleSideEnum side)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Core.BattleSideEnum</span></td>
+        <td><span class="parametername">side</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetInfoTextForBeingNotInteractable_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetInfoTextForBeingNotInteractable*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetInfoTextForBeingNotInteractable_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetInfoTextForBeingNotInteractable(Agent)">GetInfoTextForBeingNotInteractable(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject GetInfoTextForBeingNotInteractable(Agent userAgent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">userAgent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Localization.TextObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetOrder_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetOrder*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetOrder_TaleWorlds_Core_BattleSideEnum_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetOrder(TaleWorlds.Core.BattleSideEnum)">GetOrder(BattleSideEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual OrderType GetOrder(BattleSideEnum side)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Core.BattleSideEnum</span></td>
+        <td><span class="parametername">side</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OrderType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetSuitableStandingPointFor_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetSuitableStandingPointFor*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetSuitableStandingPointFor_TaleWorlds_Core_BattleSideEnum_Agent_System_Collections_Generic_IEnumerable_Agent__System_Collections_Generic_IEnumerable_AgentValuePair_System_Single___" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetSuitableStandingPointFor(TaleWorlds.Core.BattleSideEnum,Agent,System.Collections.Generic.IEnumerable{Agent},System.Collections.Generic.IEnumerable{AgentValuePair{System.Single}})">GetSuitableStandingPointFor(BattleSideEnum, Agent, IEnumerable&lt;Agent&gt;, IEnumerable&lt;AgentValuePair&lt;Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual StandingPoint GetSuitableStandingPointFor(BattleSideEnum side, Agent agent = null, IEnumerable&lt;Agent&gt; agents = null, IEnumerable&lt;AgentValuePair&lt;float&gt;&gt; agentValuePairs = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Core.BattleSideEnum</span></td>
+        <td><span class="parametername">side</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Agent</span>&gt;</td>
+        <td><span class="parametername">agents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">AgentValuePair</span>&lt;<span class="xref">System.Single</span>&gt;&gt;</td>
+        <td><span class="parametername">agentValuePairs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetTargetStandingPointOfAIAgent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetTargetStandingPointOfAIAgent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetTargetStandingPointOfAIAgent_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetTargetStandingPointOfAIAgent(Agent)">GetTargetStandingPointOfAIAgent(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StandingPoint GetTargetStandingPointOfAIAgent(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetVacantStandingPointForAI_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetVacantStandingPointForAI*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetVacantStandingPointForAI_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetVacantStandingPointForAI(Agent)">GetVacantStandingPointForAI(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StandingPoint GetVacantStandingPointForAI(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetValidStandingPointForAgent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetValidStandingPointForAgent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetValidStandingPointForAgent_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetValidStandingPointForAgent(Agent)">GetValidStandingPointForAgent(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity GetValidStandingPointForAgent(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetValidStandingPointForAgentWithoutDistanceCheck_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetValidStandingPointForAgentWithoutDistanceCheck*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetValidStandingPointForAgentWithoutDistanceCheck_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetValidStandingPointForAgentWithoutDistanceCheck(Agent)">GetValidStandingPointForAgentWithoutDistanceCheck(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity GetValidStandingPointForAgentWithoutDistanceCheck(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_GetWeightOfStandingPoint_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetWeightOfStandingPoint*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_GetWeightOfStandingPoint_StandingPoint_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.GetWeightOfStandingPoint(StandingPoint)">GetWeightOfStandingPoint(StandingPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float GetWeightOfStandingPoint(StandingPoint sp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StandingPoint</span></td>
+        <td><span class="parametername">sp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsDisabledForBattleSide_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDisabledForBattleSide*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsDisabledForBattleSide_TaleWorlds_Core_BattleSideEnum_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDisabledForBattleSide(TaleWorlds.Core.BattleSideEnum)">IsDisabledForBattleSide(BattleSideEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsDisabledForBattleSide(BattleSideEnum sideEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Core.BattleSideEnum</span></td>
+        <td><span class="parametername">sideEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsDisabledForBattleSideAI_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDisabledForBattleSideAI*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsDisabledForBattleSideAI_TaleWorlds_Core_BattleSideEnum_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsDisabledForBattleSideAI(TaleWorlds.Core.BattleSideEnum)">IsDisabledForBattleSideAI(BattleSideEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsDisabledForBattleSideAI(BattleSideEnum sideEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Core.BattleSideEnum</span></td>
+        <td><span class="parametername">sideEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsInRangeToCheckAlternativePoints_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsInRangeToCheckAlternativePoints*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsInRangeToCheckAlternativePoints_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsInRangeToCheckAlternativePoints(Agent)">IsInRangeToCheckAlternativePoints(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsInRangeToCheckAlternativePoints(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_IsStandingPointAvailableForAgent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsStandingPointAvailableForAgent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_IsStandingPointAvailableForAgent_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.IsStandingPointAvailableForAgent(Agent)">IsStandingPointAvailableForAgent(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStandingPointAvailableForAgent(Agent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnEditorTick_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnEditorTick*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnEditorTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnEditorTick(System.Single)">OnEditorTick(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEditorTick(float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnEditorValidate_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnEditorValidate*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnEditorValidate" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnEditorValidate">OnEditorValidate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEditorValidate()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnFocusGain_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnFocusGain*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnFocusGain_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnFocusGain(Agent)">OnFocusGain(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFocusGain(Agent userAgent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">userAgent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnFocusLose_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnFocusLose*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnFocusLose_Agent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnFocusLose(Agent)">OnFocusLose(Agent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFocusLose(Agent userAgent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Agent</span></td>
+        <td><span class="parametername">userAgent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnInit_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnInit*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnInit" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnInit">OnInit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnInit">MissionObject.OnInit()</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnMissionReset_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnMissionReset*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnMissionReset" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnMissionReset">OnMissionReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMissionReset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnMissionReset">MissionObject.OnMissionReset()</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnRemoved_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnRemoved*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnRemoved" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnRemoved">OnRemoved()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRemoved()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnRemoved">MissionObject.OnRemoved()</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_OnTick_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnTick*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_OnTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.OnTick(System.Single)">OnTick(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick(float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_OnTick_System_Single_">SynchedMissionObject.OnTick(Single)</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_ReadFromNetwork_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.ReadFromNetwork*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_ReadFromNetwork" data-uid="TaleWorlds.MountAndBlade.UsableMachine.ReadFromNetwork">ReadFromNetwork()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ReadFromNetwork()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ReadFromNetwork">SynchedMissionObject.ReadFromNetwork()</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_RemoveComponent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.RemoveComponent*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_RemoveComponent_UsableMissionObjectComponent_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.RemoveComponent(UsableMissionObjectComponent)">RemoveComponent(UsableMissionObjectComponent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveComponent(UsableMissionObjectComponent component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UsableMissionObjectComponent</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_SetPhysicsStateSynched_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.SetPhysicsStateSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_SetPhysicsStateSynched_System_Boolean_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.SetPhysicsStateSynched(System.Boolean,System.Boolean)">SetPhysicsStateSynched(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetPhysicsStateSynched(bool value, bool setChildren = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setChildren</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetPhysicsStateSynched_System_Boolean_System_Boolean_">SynchedMissionObject.SetPhysicsStateSynched(Boolean, Boolean)</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_SetVisibleSynched_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.SetVisibleSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_SetVisibleSynched_System_Boolean_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.SetVisibleSynched(System.Boolean,System.Boolean)">SetVisibleSynched(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetVisibleSynched(bool value, bool forceChildrenVisible = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceChildrenVisible</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetVisibleSynched_System_Boolean_System_Boolean_">SynchedMissionObject.SetVisibleSynched(Boolean, Boolean)</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_ToString_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.ToString*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_ToString" data-uid="TaleWorlds.MountAndBlade.UsableMachine.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_UsableMachine_WriteToNetwork_" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WriteToNetwork*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_UsableMachine_WriteToNetwork" data-uid="TaleWorlds.MountAndBlade.UsableMachine.WriteToNetwork">WriteToNetwork()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteToNetwork()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_WriteToNetwork">SynchedMissionObject.WriteToNetwork()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IFocusable</span>
+  </div>
+  <div>
+      <span class="xref">IOrderable</span>
+  </div>
+  <div>
+      <span class="xref">IDetachment</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

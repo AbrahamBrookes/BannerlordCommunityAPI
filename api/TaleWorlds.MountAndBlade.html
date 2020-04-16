@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace TaleWorlds.MountAndBlade
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace TaleWorlds.MountAndBlade
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade">
+  
+  <h1 id="TaleWorlds_MountAndBlade" data-uid="TaleWorlds.MountAndBlade" class="text-break">Namespace TaleWorlds.MountAndBlade
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="TaleWorlds.MountAndBlade.ArrowBarrel.html">ArrowBarrel</a></h4>
+      <section><p>The ArrowBarrel is a good example of an object that exists in the mission world (not the map view) that inherits a lot of different things.</p>
+<p>It's inheritance tree includes <a href="TaleWorlds.MountAndBlade.SynchedMissionObject.html"><strong>SynchedMissionObject</strong></a> which means it can be managed in multiplayer games.</p>
+<p>it is a <a href="TaleWorlds.Engine.ScriptComponentBehaviour.html"><strong>ScriptComponentBehaviour</strong></a> which means it can be attached as a component to a <a href="TaleWorlds.Engine.GameEntity.html"><strong>GameEntity</strong></a>.</p>
+</section>
+      <h4><a class="xref" href="TaleWorlds.MountAndBlade.Bird.html">Bird</a></h4>
+      <section></section>
+      <h4><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></h4>
+      <section><p>The <strong>MissionObject</strong> is a <a href="TaleWorlds.Engine.ScriptComponentBehaviour.html"><strong>ScriptComponentBehaviour</strong></a> that is attached to a <strong>GameEntity</strong>[TaleWorlds.Engine.GameEntity.html) in order to make it a placeable, interactable object in the &quot;mission&quot; world - that is, the first/third person world, <strong>not</strong> the world map.</p>
+<p>The <strong>MissionObject</strong> <em>inherits from</em> ScriptComponentBehaviour. You would also say that MissionObject <em>extends</em> ScriptComponentBehaviour. This means that all of the functions and properties available in ScriptComponentBehaviour are <em>also available in MissionObject</em>. This is what people mean when they say &quot;Inheritance&quot;.</p>
+<p><strong>MissionObject</strong> is also an <em>abstract</em> class. That means that you can't ever create a <strong>new MissionObject</strong>. In order to use this class, you must <em>extend</em> it, and your extending class must implement any <em>abstract <strong>methods</strong></em> that are defined in this <em>abstract <strong>class</strong></em>.</p>
+<p>A good example of an object that <em>extends</em> <strong>MissionObject</strong> would be <a href="TaleWorlds.MountAndBlade.Bird.html"><strong>Bird</strong></a>.</p>
+<p><strong>REMEMBER!</strong> <strong>Bird</strong> is still a <strong>ScriptComponentBehaviour</strong>, because it extends a class that extends <em>that</em> class. So a <strong>Bird</strong> is still added to a <strong>GameEntity</strong> as any other <strong>ScriptComponentBehaviour</strong> can be, and it has access to all of the methods and properties of both <strong>MissionObject</strong> <em>and</em> <strong>ScriptComponentBehaviour</strong>. This is the beauty of inheritance!</p>
+</section>
+      <h4><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html">SynchedMissionObject</a></h4>
+      <section><p>The <strong>SynchedMissionObject</strong> endows a regular <a href="TaleWorlds.MountAndBlade.MissionObject.html"><strong>MissionObject</strong></a> with network abilities - allowing it to be synched over the network in multiplayer battles.</p>
+<p>It inherits from <strong>MissionObject</strong> and so is a <strong>ScriptComponentBehaviour</strong> that can be added to a <strong>GameEntity</strong>.</p>
+</section>
+      <h4><a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html">UsableMachine</a></h4>
+      <section><p><strong>UsableMachine</strong> is a <em>base class</em> for multiplayer siege equipment and other &quot;useable&quot; props, specifically in the multiplayer mission/battle view(not the map view).</p>
+<p>&quot;Base class&quot; means it is designed to be extended in order for devs to create new mission objects. It is marked <em>abstract</em> to prevent people from trying to create a new instance of this class directly.</p>
+<p>A good example of how this is used is the <a href="TaleWorlds.MountAndBlade.ArrowBarrel.html"><strong>ArrowBarrel</strong></a> class.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.SynchFlags.html">SynchedMissionObject.SynchFlags</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

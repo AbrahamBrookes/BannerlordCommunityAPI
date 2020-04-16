@@ -1,0 +1,916 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SynchedMissionObject
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SynchedMissionObject
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject">
+  
+  
+  <h1 id="TaleWorlds_MountAndBlade_SynchedMissionObject" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject" class="text-break">Class SynchedMissionObject
+  </h1>
+  <div class="markdown level0 summary"><p>The <strong>SynchedMissionObject</strong> endows a regular <a href="TaleWorlds.MountAndBlade.MissionObject.html"><strong>MissionObject</strong></a> with network abilities - allowing it to be synched over the network in multiplayer battles.</p>
+<p>It inherits from <strong>MissionObject</strong> and so is a <strong>ScriptComponentBehaviour</strong> that can be added to a <strong>GameEntity</strong>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TaleWorlds.DotNet.DotNetObject</span></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html">ScriptComponentBehaviour</a></div>
+    <div class="level3"><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></div>
+    <div class="level4"><span class="xref">SynchedMissionObject</span></div>
+      <div class="level5"><a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html">UsableMachine</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_Id">MissionObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_IsDisabled">MissionObject.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_System_Boolean_">MissionObject.SetAbilityOfFaces(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnInit">MissionObject.OnInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity">MissionObject.AttachDynamicNavmeshToEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetEntityToAttachNavMeshFaces">MissionObject.GetEntityToAttachNavMeshFaces()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnPreInit">MissionObject.OnPreInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetHashCode">MissionObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetUniqueIdentifier">MissionObject.GetUniqueIdentifier()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnMissionReset">MissionObject.OnMissionReset()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AfterMissionStart">MissionObject.AfterMissionStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnHit_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_Int32_System_Int32_System_Boolean__">MissionObject.OnHit(Agent, Int32, Vec3, Vec3, Int32, Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabled_System_Boolean_">MissionObject.SetDisabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_System_Boolean_">MissionObject.SetDisabledAndMakeInvisible(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnRemoved">MissionObject.OnRemoved()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnEndMission">MissionObject.OnEndMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime">MissionObject.CreatedAtRuntime</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MovesEntity">MissionObject.MovesEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AddStuckMissile_TaleWorlds_Engine_GameEntity_">MissionObject.AddStuckMissile(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_InsideNavMeshIdLocal">MissionObject.InsideNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_EnterNavMeshIdLocal">MissionObject.EnterNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_ExitNavMeshIdLocal">MissionObject.ExitNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_BlockerNavMeshIdLocal">MissionObject.BlockerNavMeshIdLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_NavMeshPrefabName">MissionObject.NavMeshPrefabName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_DynamicNavmeshIdStart">MissionObject.DynamicNavmeshIdStart</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.html">TaleWorlds.MountAndBlade</a></h6>
+  <h6><strong>Assembly</strong>: Bannerlord Community API.dll</h6>
+  <h5 id="TaleWorlds_MountAndBlade_SynchedMissionObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SynchedMissionObject : MissionObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_Color_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.Color*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_Color" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.Color">Color</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Color { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_Color2_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.Color2*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_Color2" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.Color2">Color2</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Color2 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_RemainingDuration_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.RemainingDuration*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_RemainingDuration" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.RemainingDuration">RemainingDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RemainingDuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SynchronizeCompleted_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SynchronizeCompleted*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SynchronizeCompleted" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SynchronizeCompleted">SynchronizeCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SynchronizeCompleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_AddBodyFlagsSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.AddBodyFlagsSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_AddBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.AddBodyFlagsSynched(TaleWorlds.Engine.BodyFlags,System.Boolean)">AddBodyFlagsSynched(BodyFlags, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBodyFlagsSynched(BodyFlags flags, bool applyToChildren = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Engine.BodyFlags</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">applyToChildren</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_ApplyImpulseSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.ApplyImpulseSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_ApplyImpulseSynched_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.ApplyImpulseSynched(TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,System.Boolean)">ApplyImpulseSynched(Vec3, Vec3, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyImpulseSynched(Vec3 position, Vec3 impulse, bool localSpace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.Vec3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.Vec3</span></td>
+        <td><span class="parametername">impulse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">localSpace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_BurstParticlesSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.BurstParticlesSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_BurstParticlesSynched_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.BurstParticlesSynched(System.Boolean)">BurstParticlesSynched(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BurstParticlesSynched(bool doChildren = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doChildren</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_OnTick_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.OnTick*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_OnTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.OnTick(System.Single)">OnTick(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick(float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_PauseSkeletonAnimationSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.PauseSkeletonAnimationSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_PauseSkeletonAnimationSynched" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.PauseSkeletonAnimationSynched">PauseSkeletonAnimationSynched()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseSkeletonAnimationSynched()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_ReadFromNetwork_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.ReadFromNetwork*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_ReadFromNetwork" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.ReadFromNetwork">ReadFromNetwork()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ReadFromNetwork()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_ReadFromNetwork">MissionObject.ReadFromNetwork()</a></div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_RemoveBodyFlagsSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.RemoveBodyFlagsSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_RemoveBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.RemoveBodyFlagsSynched(TaleWorlds.Engine.BodyFlags,System.Boolean)">RemoveBodyFlagsSynched(BodyFlags, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBodyFlagsSynched(BodyFlags flags, bool applyToChildren = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Engine.BodyFlags</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">applyToChildren</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_ResumeSkeletonAnimationSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.ResumeSkeletonAnimationSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_ResumeSkeletonAnimationSynched" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.ResumeSkeletonAnimationSynched">ResumeSkeletonAnimationSynched()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeSkeletonAnimationSynched()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetAnimationAtChannelSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_String_System_Int32_System_Single_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetAnimationAtChannelSynched(System.String,System.Int32,System.Single)">SetAnimationAtChannelSynched(String, Int32, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnimationAtChannelSynched(string animationName, int channelNo, float animationSpeed = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">animationName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">channelNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">animationSpeed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationChannelParameterSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetAnimationChannelParameterSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationChannelParameterSynched_System_Int32_System_Single_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetAnimationChannelParameterSynched(System.Int32,System.Single)">SetAnimationChannelParameterSynched(Int32, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnimationChannelParameterSynched(int channelNo, float parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">channelNo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetDisabledSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetDisabledSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetDisabledSynched" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetDisabledSynched">SetDisabledSynched()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDisabledSynched()</code></pre>
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetFrameSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetFrameSynched(TaleWorlds.Library.MatrixFrame@,System.Boolean)">SetFrameSynched(ref MatrixFrame, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameSynched(ref MatrixFrame frame, bool isClient = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.MatrixFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynchedOverTime_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetFrameSynchedOverTime*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetFrameSynchedOverTime(TaleWorlds.Library.MatrixFrame@,System.Single,System.Boolean)">SetFrameSynchedOverTime(ref MatrixFrame, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameSynchedOverTime(ref MatrixFrame frame, float duration, bool isClient = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.MatrixFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetGlobalFrameSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetGlobalFrameSynched(TaleWorlds.Library.MatrixFrame@,System.Boolean)">SetGlobalFrameSynched(ref MatrixFrame, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlobalFrameSynched(ref MatrixFrame frame, bool isClient = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.MatrixFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynchedOverTime_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetGlobalFrameSynchedOverTime*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetGlobalFrameSynchedOverTime(TaleWorlds.Library.MatrixFrame@,System.Single,System.Boolean)">SetGlobalFrameSynchedOverTime(ref MatrixFrame, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlobalFrameSynchedOverTime(ref MatrixFrame frame, float duration, bool isClient = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.MatrixFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetLocalPositionSmoothStep_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetLocalPositionSmoothStep*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetLocalPositionSmoothStep_TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetLocalPositionSmoothStep(TaleWorlds.Library.Vec3@)">SetLocalPositionSmoothStep(ref Vec3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalPositionSmoothStep(ref Vec3 targetPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TaleWorlds.Library.Vec3</span></td>
+        <td><span class="parametername">targetPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetPhysicsStateSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetPhysicsStateSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetPhysicsStateSynched_System_Boolean_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetPhysicsStateSynched(System.Boolean,System.Boolean)">SetPhysicsStateSynched(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetPhysicsStateSynched(bool value, bool setChildren = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setChildren</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColors_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetTeamColors*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColors_System_UInt32_System_UInt32_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetTeamColors(System.UInt32,System.UInt32)">SetTeamColors(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTeamColors(uint color, uint color2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">color2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColorsSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetTeamColorsSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColorsSynched_System_UInt32_System_UInt32_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetTeamColorsSynched(System.UInt32,System.UInt32)">SetTeamColorsSynched(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTeamColorsSynched(uint color, uint color2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">color2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetVisibleSynched_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetVisibleSynched*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_SetVisibleSynched_System_Boolean_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.SetVisibleSynched(System.Boolean,System.Boolean)">SetVisibleSynched(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetVisibleSynched(bool value, bool forceChildrenVisible = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceChildrenVisible</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_SynchedMissionObject_WriteToNetwork_" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.WriteToNetwork*"></a>
+  <h4 id="TaleWorlds_MountAndBlade_SynchedMissionObject_WriteToNetwork" data-uid="TaleWorlds.MountAndBlade.SynchedMissionObject.WriteToNetwork">WriteToNetwork()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteToNetwork()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_WriteToNetwork">MissionObject.WriteToNetwork()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
