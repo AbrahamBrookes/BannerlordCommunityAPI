@@ -5,6 +5,111 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.CampaignSystem.CampaignBehaviorBase.SaveableCampaignBehaviorTypeDefiner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.CampaignSystem.CampaignBehaviorBase.SaveableCampaignBehaviorTypeDefiner.html",
+          "hash": "kdumSTs16yr7Hg2B/EtCyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.CampaignSystem.CampaignBehaviorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.CampaignSystem.CampaignBehaviorBase.html",
+          "hash": "FLGB/6LpUkYolHIRIY4xFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.CampaignSystem.ICampaignBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.CampaignSystem.ICampaignBehavior.html",
+          "hash": "BovR1i4OXyx63hNfRrWYfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors.FoodConsumptionBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors.FoodConsumptionBehavior.html",
+          "hash": "7jnQ5c6ePk8fZCIZh+OhQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors.html",
+          "hash": "uATx7EgOInEbFmaEMhl/Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.CampaignSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.CampaignSystem.html",
+          "hash": "dt/bpDbFH9BL/EjMTp0FqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Core.MBObjectBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Core.MBObjectBase.html",
+          "hash": "LCNAelNKu67FmB9G/KEvPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Core.html",
+          "hash": "9tv7T2YhkGN3YKbalvAMUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TaleWorlds.Engine.GameEntity.ComponentType.yml",
       "output": {
         ".html": {
@@ -55,6 +160,18 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleWorlds.Engine.ScriptComponentBehaviour.ScriptComponentBehaviourCallbackFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleWorlds.Engine.ScriptComponentBehaviour.ScriptComponentBehaviourCallbackFlags.html",
+          "hash": "/XOTG6+Zn14QJXqnPzuDhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -63,7 +180,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.Engine.ScriptComponentBehaviour.html",
-          "hash": "6eFf265fzk/2EJ2FLsVcQg=="
+          "hash": "TIhuKj6CzSppolVnNfblVg=="
         }
       },
       "is_incremental": false,
@@ -75,7 +192,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.Engine.html",
-          "hash": "KqLOG1ZMBT0cDEA7ba0m9g=="
+          "hash": "Ad32Jngg54/Nt2Q+bbBzZA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.MountAndBlade.ArrowBarrel.html",
-          "hash": "TehtGJoRVD2Ynge9Jw5Kog=="
+          "hash": "L/HtavdVikcLmCe/al0Btg=="
         }
       },
       "is_incremental": false,
@@ -102,7 +219,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.MountAndBlade.Bird.html",
-          "hash": "9r6d5YsCBg5mPMWubNUWrQ=="
+          "hash": "qHNIcxtNQ991XwmUW8hMZg=="
         }
       },
       "is_incremental": false,
@@ -117,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.MountAndBlade.MissionObject.html",
-          "hash": "aCITFO7XxbwnoSAQGg6cNg=="
+          "hash": "/qFAioEUfgiH123Z70LAyA=="
         }
       },
       "is_incremental": false,
@@ -144,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.MountAndBlade.SynchedMissionObject.html",
-          "hash": "KUhQUZeo6ou++GXJ9iUvow=="
+          "hash": "nGaChcJc2KUZX/ef7bx48A=="
         }
       },
       "is_incremental": false,
@@ -159,7 +276,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.MountAndBlade.UsableMachine.html",
-          "hash": "CQcPdIIgNstnckdYSYRhYQ=="
+          "hash": "DKh6948wMhyJC58tttm3LA=="
         }
       },
       "is_incremental": false,
@@ -171,7 +288,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TaleWorlds.MountAndBlade.html",
-          "hash": "MJRbcBX+Q+16Hsg2NJ5rdA=="
+          "hash": "NBSYSullyPq8bL15Z4KpLg=="
         }
       },
       "is_incremental": false,
@@ -195,7 +312,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ho4UM9i+AqPyDT3H0AKcDQ=="
+          "hash": "cCOPIhjcgX0LSiL/6R+b+w=="
         }
       },
       "is_incremental": false,
@@ -283,8 +400,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 13,
-          "skipped_file_count": 1
+          "total_file_count": 22,
+          "skipped_file_count": 6
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

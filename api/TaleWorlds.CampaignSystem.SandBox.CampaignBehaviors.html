@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace TaleWorlds.Engine
+    <title>Namespace TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace TaleWorlds.Engine
+    <meta name="title" content="Namespace TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors
    ">
     <meta name="generator" content="docfx 2.52.0.0">
     
@@ -68,35 +68,21 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="TaleWorlds.Engine">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors">
   
-  <h1 id="TaleWorlds_Engine" data-uid="TaleWorlds.Engine" class="text-break">Namespace TaleWorlds.Engine
+  <h1 id="TaleWorlds_CampaignSystem_SandBox_CampaignBehaviors" data-uid="TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors" class="text-break">Namespace TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></h4>
-      <section><p>The <strong>GameEntity</strong> class is the base of a lot of other game objects. It is conceptually similar to Unreal Enginges <em>Actor</em> class, or Unity's <em>GameObject</em> class.</p>
-<p><strong>GameEntity</strong> is a <strong>sealed</strong> class, which means it cannot be extended (aka &quot;Inherited from&quot;).</p>
-<p>You can modify the behaviour of a <strong>GameEntity</strong> by attaching a <a href="TaleWorlds.Engine.ScriptComponentBehaviour.html"><strong>ScriptComponentBehaviour</strong></a>.</p>
-<p>Classes that extend <strong>ScriptComponentBehaviour</strong> have access to their attached <strong>GameEntity</strong>, and you can see more in the <strong>ScriptComponentBehaviour</strong> documentation</p>
+      <h4><a class="xref" href="TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors.FoodConsumptionBehavior.html">FoodConsumptionBehavior</a></h4>
+      <section><p>This <a href="TaleWorlds.CampaignSystem.CampaignBehaviorBase.html"><strong>CampaignBehaviour</strong></a> defines how your troops consume food units during gameplay. It is a good example of how to extend the <strong>CampaignBehaviorBase</strong> class.</p>
+<p>As you can see it implements the <strong>RegisterEvents</strong> method as described in the <a href="TaleWorlds.CampaignSystem.ICampaignBehavior.html"><strong>ICampaignBehavior</strong></a> interface. This means that when the module is loaded, this classes <strong>RegisterEvents</strong> method will be called, allowing this class to hook into the module system.</p>
+<p>the guts of this class is mainly in the <strong>OnTick</strong> event, which runs once every frame (I think). It checks if your party is starving, and if so, calls its own <strong>PartyConsumeFood</strong> method.</p>
+<p>The <strong>PartyConsumeFood</strong> method takes a couple of things into consideration and then decides if it can slaughter some livestock or not, and then adjusts your party morale accordingly.</p>
 </section>
-      <h4><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html">ScriptComponentBehaviour</a></h4>
-      <section><p>The <strong>ScriptComponentBehaviour</strong> class provides an interface for creating custom in-game behaviours that effect <a href="TaleWorlds.Engine.GameEntity.html"><strong>GameEntities</strong></a></p>
-<p>This is similar to the Unity Script component.</p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="TaleWorlds.Engine.GameEntity.ComponentType.html">GameEntity.ComponentType</a></h4>
-      <section></section>
-      <h4><a class="xref" href="TaleWorlds.Engine.GameEntity.Mobility.html">GameEntity.Mobility</a></h4>
-      <section></section>
-      <h4><a class="xref" href="TaleWorlds.Engine.GameEntity.UpgradeLevelMask.html">GameEntity.UpgradeLevelMask</a></h4>
-      <section></section>
-      <h4><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.ScriptComponentBehaviourCallbackFlags.html">ScriptComponentBehaviour.ScriptComponentBehaviourCallbackFlags</a></h4>
-      <section></section>
 </article>
           </div>
           

@@ -73,7 +73,7 @@
   
   <h1 id="TaleWorlds_MountAndBlade_MissionObject" data-uid="TaleWorlds.MountAndBlade.MissionObject" class="text-break">Class MissionObject
   </h1>
-  <div class="markdown level0 summary"><p>The <strong>MissionObject</strong> is a <a href="TaleWorlds.Engine.ScriptComponentBehaviour.html"><strong>ScriptComponentBehaviour</strong></a> that is attached to a <strong>GameEntity</strong>[TaleWorlds.Engine.GameEntity.html) in order to make it a placeable, interactable object in the &quot;mission&quot; world - that is, the first/third person world, <strong>not</strong> the world map.</p>
+  <div class="markdown level0 summary"><p>The <strong>MissionObject</strong> is a <a href="TaleWorlds.Engine.ScriptComponentBehaviour.html"><strong>ScriptComponentBehaviour</strong></a> that is attached to a <strong>GameEntity</strong>(TaleWorlds.Engine.GameEntity.html) in order to make it a placeable, interactable object in the &quot;mission&quot; world - that is, the first/third person world, <strong>not</strong> the world map.</p>
 <p>The <strong>MissionObject</strong> <em>inherits from</em> ScriptComponentBehaviour. You would also say that MissionObject <em>extends</em> ScriptComponentBehaviour. This means that all of the functions and properties available in ScriptComponentBehaviour are <em>also available in MissionObject</em>. This is what people mean when they say &quot;Inheritance&quot;.</p>
 <p><strong>MissionObject</strong> is also an <em>abstract</em> class. That means that you can't ever create a <strong>new MissionObject</strong>. In order to use this class, you must <em>extend</em> it, and your extending class must implement any <em>abstract <strong>methods</strong></em> that are defined in this <em>abstract <strong>class</strong></em>.</p>
 <p>A good example of an object that <em>extends</em> <strong>MissionObject</strong> would be <a href="TaleWorlds.MountAndBlade.Bird.html"><strong>Bird</strong></a>.</p>
@@ -91,6 +91,60 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_GameEntity">ScriptComponentBehaviour.GameEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_ScriptComponent">ScriptComponentBehaviour.ScriptComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_Scene">ScriptComponentBehaviour.Scene</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_SetScene_TaleWorlds_Engine_Scene_">ScriptComponentBehaviour.SetScene(Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnTick_System_Single_">ScriptComponentBehaviour.OnTick(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnEditorInit">ScriptComponentBehaviour.OnEditorInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnEditorTick_System_Single_">ScriptComponentBehaviour.OnEditorTick(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnEditorValidate">ScriptComponentBehaviour.OnEditorValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_IsOnlyVisual">ScriptComponentBehaviour.IsOnlyVisual()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_DisablesOroCreation">ScriptComponentBehaviour.DisablesOroCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnEditorVariableChanged_System_String_">ScriptComponentBehaviour.OnEditorVariableChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnSceneSave_System_String_">ScriptComponentBehaviour.OnSceneSave(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnCheckForProblems">ScriptComponentBehaviour.OnCheckForProblems()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnPhysicsCollision_TaleWorlds_Engine_PhysicsContact__">ScriptComponentBehaviour.OnPhysicsCollision(PhysicsContact)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnEditModeVisibilityChanged_System_Boolean_">ScriptComponentBehaviour.OnEditModeVisibilityChanged(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_IsOnHitCallable">ScriptComponentBehaviour.IsOnHitCallable()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_GetCallbackFlags">ScriptComponentBehaviour.GetCallbackFlags()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_IsMethodOverridden_System_String_">ScriptComponentBehaviour.IsMethodOverridden(String)</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -503,6 +557,8 @@ protected string NavMeshPrefabName</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_MovesEntity">ScriptComponentBehaviour.MovesEntity()</a></div>
   
   
   <a id="TaleWorlds_MountAndBlade_MissionObject_OnEndMission_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnEndMission*"></a>
@@ -595,6 +651,8 @@ protected string NavMeshPrefabName</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnInit">ScriptComponentBehaviour.OnInit()</a></div>
   
   
   <a id="TaleWorlds_MountAndBlade_MissionObject_OnMissionReset_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnMissionReset*"></a>
@@ -615,6 +673,8 @@ protected string NavMeshPrefabName</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPreInit()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnPreInit">ScriptComponentBehaviour.OnPreInit()</a></div>
   
   
   <a id="TaleWorlds_MountAndBlade_MissionObject_OnRemoved_" data-uid="TaleWorlds.MountAndBlade.MissionObject.OnRemoved*"></a>
@@ -625,6 +685,8 @@ protected string NavMeshPrefabName</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnRemoved()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehaviour.html#TaleWorlds_Engine_ScriptComponentBehaviour_OnRemoved">ScriptComponentBehaviour.OnRemoved()</a></div>
   
   
   <a id="TaleWorlds_MountAndBlade_MissionObject_ReadFromNetwork_" data-uid="TaleWorlds.MountAndBlade.MissionObject.ReadFromNetwork*"></a>
